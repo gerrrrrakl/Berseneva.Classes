@@ -110,11 +110,9 @@ namespace CafeLibrarybers
                         basketlist.Add(prod[index]);
                         Console.WriteLine("1-Продолжить покупку; 2- Корзина наполнена");
                         type = Convert.ToInt32(Console.ReadLine());
-                        //Cuisine cuisine = new Cuisine();
                         Summ = basketlist.Sum(x => x.Цена);
                         if (type == 2)
                         {
-                            //Cuisine cuisine = new Cuisine();
                             var sum = basketlist.Sum(x => x.Цена);
                             Console.WriteLine("Сумма заказа: " + sum);
                             Console.WriteLine("Спасибо за заказ!");
